@@ -1,0 +1,11 @@
+[push]
+  default = simple
+[user]
+  name = Aldrin D'Souza
+  email = aldrin@users.noreply.github.com
+[alias]
+  commend = "commit --amend --no-edit"
+[core]
+  autocrlf = input
+[credential]
+  helper = cache

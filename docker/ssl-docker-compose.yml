@@ -1,0 +1,14 @@
+version: '2'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    volumes:
+      - ~/Code/.dotfiles/ca:/ca
+    environment:
+      RABBITMQ_DEFAULT_VHOST: /rsa/system
+      RABBITMQ_SSL_CERTFILE: /ca/rabbitmq.pem
+      RABBITMQ_SSL_KEYFILE: /ca/keys/rabbitmq.key
+      RABBITMQ_SSL_CACERTFILE: /ca/ca.pem
+    ports:
+      - 5671:5671
+      - 15671:15671

@@ -1,0 +1,7 @@
+*.key
+*.pem
+*.csr
+*.json
+keys/
+certs/
+db/

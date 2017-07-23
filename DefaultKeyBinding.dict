@@ -1,0 +1,18 @@
+{
+    "~f"      = "moveWordForward:";              /* M-f */
+    "~b"      = "moveWordBackward:";             /* M-b */
+    "~<"      = "moveToBeginningOfDocument:";    /* M-< */
+    "~>"      = "moveToEndOfDocument:";          /* M-> */
+    "~v"      = "pageUp:";                       /* M-v */
+    "^v"      = "pageDown:";                     /* C-v */
+    "~d"      = "deleteWordForward:";            /* M-d */
+    "~^h"     = "deleteWordBackward:";           /* M-C-h */
+    "~\177"   = "deleteWordBackward:";           /* M-delete */
+    "~\UF728" = "deleteWordForward:";            /* delete */
+    "^/"      = "undo:";                         /* C-/ */
+    "^_"      = "undo:";                         /* C-_ */
+    "~/"      = "complete:";                     /* M-/ */
+    "^g"      = "_cancelKey:";                   /* C-g */
+    "^a"      = "moveToBeginningOfLine:";        /* C-a */
+    "^e"      = "moveToEndOfLine:";              /* C-e */
+}

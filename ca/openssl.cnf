@@ -1,0 +1,37 @@
+# Dummy CA
+[ ca ]
+default_ca = dummy_ca
+
+[ dummy_ca ]
+dir = .
+certificate = $dir/ca.pem
+private_key = $dir/ca.key
+database = $dir/db/index
+new_certs_dir=$dir/certs
+serial = $dir/db/serial
+certs = $dir/certs
+
+default_days = 365
+default_md = sha256
+policy = policy_match
+
+[ policy_match ]
+commonName = supplied
+localityName = optional
+emailAddress = optional
+organizationName = optional
+organizationalUnitName = optional
+
+[ req ]
+default_bits = 2048
+req_extensions = v3_user
+distinguished_name = req_distinguished_name
+
+[ req_distinguished_name ]
+commonName = Name
+localityName = Location
+organizationName = Organization Name
+organizationalUnitName = Organizational Unit
+
+[ v3_user ]
+basicConstraints = CA:FALSE
