@@ -14,10 +14,16 @@
 (eval-when-compile (require 'use-package))
 
 ;; Pick packages
+(use-package magit :ensure t)
 (use-package json-mode :ensure t)
+(use-package cargo :ensure t)
 (use-package yaml-mode :ensure t)
+(use-package rust-mode :ensure t
+  :config (setq compile-command "cargo"))
 (use-package drag-stuff :ensure t
-  :config (drag-stuff-global-mode 1))
+  :config
+  (drag-stuff-global-mode 1)
+  (drag-stuff-define-keys))
 (use-package groovy-mode :ensure t
   :init (require 'cl))
 (use-package bury-successful-compilation :ensure t
@@ -29,7 +35,7 @@
   (add-hook 'before-save-hook 'ajd/orgtbl-to-markdown))
 (use-package dockerfile-mode :ensure t)
 (use-package better-defaults :ensure t)
-(use-package magit :ensure t)
+(use-package adoc-mode :ensure t)
 (use-package osx-clipboard :ensure t
   :config (osx-clipboard-mode +1))
 

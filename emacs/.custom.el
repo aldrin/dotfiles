@@ -6,9 +6,6 @@
  '(auto-save-default nil)
  '(column-number-mode t)
  '(custom-file "~/.custom.el")
- '(exec-path
-   (quote
-    ("/usr/local/bin" "/usr/bin" "/bin" "/usr/sbin" "/sbin")))
  '(fill-column 100)
  '(git-commit-fill-column 65)
  '(ido-enable-flex-matching t)
@@ -29,9 +26,10 @@
      ("melpa" . "https://stable.melpa.org/packages/"))))
  '(package-selected-packages
    (quote
-    (osx-clipboard magit better-defaults dockerfile-mode markdown-mode bury-successful-compilation groovy-mode drag-stuff yaml-mode json-mode use-package)))
+    (yaml-mode use-package osx-clipboard markdown-mode magit json-mode groovy-mode drag-stuff dockerfile-mode cargo bury-successful-compilation better-defaults adoc-mode)))
  '(recentf-mode t)
  '(ring-bell-function (quote ignore))
+ '(rust-format-on-save t)
  '(scroll-bar-mode nil)
  '(scroll-conservatively 1)
  '(tab-width 2)
@@ -44,4 +42,3 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-

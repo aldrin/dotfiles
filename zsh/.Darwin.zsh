@@ -7,6 +7,9 @@ source ~/.py/bin/activate
 # Rust
 source ~/.cargo/env
 
+# Ruby
+eval "$(rbenv init -)"
+
 # Go
 export GOPATH=~/Code/Go
 export PATH="$GOPATH/bin:$PATH"
