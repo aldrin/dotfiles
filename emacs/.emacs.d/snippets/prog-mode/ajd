@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: ajd
+# key: ajd
+# --
+`(yas-with-comment (format-time-string "Copyright %Y Aldrin J D'Souza."))`
+`(yas-with-comment "Licensed under the MIT License <https://opensource.org/licenses/MIT>")`
+

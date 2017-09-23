@@ -1,7 +1,7 @@
 [push]
   default = simple
 [user]
-  name = "Aldrin D'Souza"
+  name = "Aldrin J D'Souza"
   email = aldrin@users.noreply.github.com
 [alias]
   commend = "commit --amend --no-edit"

@@ -6,6 +6,9 @@
  '(auto-save-default nil)
  '(column-number-mode t)
  '(custom-file "~/.custom.el")
+ '(custom-safe-themes
+   (quote
+    ("a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
  '(fill-column 100)
  '(git-commit-fill-column 65)
  '(ido-enable-flex-matching t)
@@ -23,12 +26,10 @@
  '(package-archives
    (quote
     (("gnu" . "http://elpa.gnu.org/packages/")
-     ("melpa" . "https://stable.melpa.org/packages/"))))
+     ("melpa" . "https://melpa.org/packages/"))))
  '(package-selected-packages
    (quote
-    (yaml-mode use-package osx-clipboard markdown-mode magit json-mode groovy-mode drag-stuff dockerfile-mode cargo bury-successful-compilation better-defaults adoc-mode)))
- '(recentf-mode t)
- '(ring-bell-function (quote ignore))
+    (toml-mode flycheck-rust smart-line-mode markdown-mode bury-successful-compilation drag-stuff osx-clipboard ace-jump-mode groovy-mode flycheck yasnippet web-mode helm dockerfile-mode better-defaults yaml-mode json-mode adoc-mode go-mode cargo magit use-package)))
  '(rust-format-on-save t)
  '(scroll-bar-mode nil)
  '(scroll-conservatively 1)
