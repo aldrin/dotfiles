@@ -8,6 +8,12 @@
       (goto-char (point-min))
       (while (search-forward "-+-" nil t) (replace-match "-|-")))))
 
+(defun ajd/wip ()
+  "Save current state as a 'work in progress' commit."
+  (interactive)
+  (magit-stage-modified)
+  (magit-commit (list "-m" "gwip")))
+
 (provide 'ajd)
 
 ;;; .ajd.el ends here
