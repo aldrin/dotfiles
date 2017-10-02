@@ -9,13 +9,13 @@ unsetopt NOMATCH
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 # Common environment variables
-export EDITOR='emacs -nw'
+export EDITOR='emacsclient -c'
 
 # Source all the function scripts
 for f in $HOME/.functions/*.sh; do; source "$f"; done;
 for f in $HOME/.`uname`.zsh; do source "$f"; done;
 
 # Aliases
-alias emacs='emacs -nw'
+alias emacs='emacsclient -c'
 alias mvnq='mvn -Pquick'
 alias jdebug='export JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5006'
