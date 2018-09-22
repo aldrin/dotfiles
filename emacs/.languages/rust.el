@@ -1,0 +1,5 @@
+(use-package rust-mode :ensure t)
+(use-package flymake-easy :ensure t)
+(use-package flymake-rust :ensure t)
+(use-package cargo :ensure t)
+(add-hook 'rust-mode-hook 'flymake-rust-load)
