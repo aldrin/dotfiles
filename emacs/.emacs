@@ -32,6 +32,9 @@
 (use-package powershell :ensure t)
 (use-package better-defaults :ensure t)
 (use-package dockerfile-mode :ensure t)
+(use-package bury-successful-compilation :ensure t
+  :bind ("C-c C-m" . recompile)
+  :config (bury-successful-compilation 1))
 (use-package web-mode :ensure t :mode "\\.html\\'")
 (use-package groovy-mode :ensure t :defer t :init (require 'cl))
 (use-package osx-clipboard :ensure t :config (osx-clipboard-mode +1))
@@ -40,13 +43,16 @@
   :config (drag-stuff-global-mode 1) (drag-stuff-define-keys))
 
 ;; Hook things up
-(add-hook 'org-mode-hook 'turn-on-flyspell)
+(add-hook 'org-mode-hook 'ajd/hook/org-mode)
 
 ;; Programming Setup
 (load "~/.languages/rust.el")
 
-
 ;; Miscellaneous Settings
 (fset 'yes-or-no-p 'y-or-n-p)
+
+;; Start the server
+(load "server")
+(unless (server-running-p) (server-start))
 
 ;;; .emacs ends here

@@ -1,11 +1,13 @@
 [push]
-  default = simple
+default = simple
 [user]
-  name = "Aldrin J D'Souza"
-  email = aldrin@users.noreply.github.com
+name = "Aldrin J D'Souza"
+email = aldrin@users.noreply.github.com
+signingkey = 523D306F1CB28066
 [alias]
-  commend = "commit --amend --no-edit"
+commend = "commit --amend --no-edit"
 [core]
-  autocrlf = input
+autocrlf = input
+editor = emacsclient -nw -q
 [credential]
-  helper = cache
+helper = cache

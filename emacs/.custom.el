@@ -6,8 +6,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (tsdh-light)))
+ '(bury-successful-compilation t)
+ '(custom-enabled-themes (quote (misterioso)))
  '(custom-file "~/.custom.el")
+ '(exec-path-from-shell-check-startup-files nil)
+ '(fill-column 100)
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(initial-major-mode (quote org-mode))
@@ -16,11 +19,13 @@
  '(package-enable-at-startup nil)
  '(package-selected-packages
    (quote
-    (htmlize terraform-mode drag-stuff osx-clipboard groovy-mode web-mode dockerfile-mode better-defaults powershell toml-mode yaml-mode json-mode exec-path-from-shell cargo flymake-easy flymake-rust rust-mode use-package)))
+    (bury-successful-compilation htmlize terraform-mode drag-stuff osx-clipboard groovy-mode web-mode dockerfile-mode better-defaults powershell toml-mode yaml-mode json-mode exec-path-from-shell cargo flymake-easy flymake-rust rust-mode use-package)))
+ '(ring-bell-function (quote ignore))
  '(rust-format-on-save t)
  '(show-paren-mode t)
  '(tab-width 4)
- '(tool-bar-mode nil))
+ '(tool-bar-mode nil)
+ '(visible-bell t))
 ;;; .custom.el ends here
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
